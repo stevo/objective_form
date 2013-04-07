@@ -1,0 +1,1 @@
+require "objective_form/base"
