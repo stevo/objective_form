@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    objective_form (0.0.2)
+    objective_form (0.0.3)
 
 GEM
   remote: http://rubygems.org/
