@@ -10,8 +10,10 @@ module ObjectiveForm
         send("#{name}=", value)
       end
 
-      pseudo_relations.each do |rel|
-        instance_variable_set("@#{rel.name}", []) unless send(rel.name)
+      unless pseudo_relations.nil?
+        pseudo_relations.each do |rel|
+          instance_variable_set("@#{rel.name}", []) unless send(rel.name)
+        end
       end
     end
 
