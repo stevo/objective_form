@@ -91,7 +91,7 @@ module ObjectiveForm
 
         define_method("#{name}=") do |values|
           Array.wrap(values).each do |value|
-            pseudo_record_instance = pseudo_record.new(value)
+            pseudo_record_instance = pseudo_record.new(*value)
             instance_variable_set("@#{name}", instance_variable_get("@#{name}") + [pseudo_record_instance])
           end
         end
